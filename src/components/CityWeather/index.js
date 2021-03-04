@@ -7,8 +7,8 @@ const CityWeather = ({cityWeather}) => {
     return (
         <div>
         <p>Temperature : {cityWeather.main!==undefined ? kelvinToCel(cityWeather.main.temp)+"°C":""}</p>
-       <p>Humidity : {cityWeather.main!=undefined ? cityWeather.main.humidity+"%" : ""}</p>
-       <p>Wind : {cityWeather.main!=undefined ? cityWeather.wind.speed +"km/h" : ""}</p>
+       <p>Humidity : {cityWeather.main!==undefined ? cityWeather.main.humidity+"%" : ""}</p>
+       <p>Wind : {cityWeather.main!==undefined ? cityWeather.wind.speed +"km/h" : ""}</p>
         </div>
     );
 };
